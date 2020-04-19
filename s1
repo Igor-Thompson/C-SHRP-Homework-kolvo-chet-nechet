@@ -1,0 +1,35 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Посчитать количество чётных и нечётных целых чисел в числе,
+            //которое укажет пользователь.
+
+            int a, b;
+
+            Console.WriteLine("Укажите число");
+            b = int.Parse(Console.ReadLine());
+
+            a = 0;
+            int chetnie = 0; 
+            int neChetnie = 0;
+
+            while (a < b)
+            {
+                
+                if (a % 2 > 0) { neChetnie++; }
+                else { chetnie++; }
+
+                a++;
+            }
+
+            Console.WriteLine("Четных чисел - " + chetnie + " и Нечётных чисел - " + neChetnie);
+
+
+        }
+    }
+}
